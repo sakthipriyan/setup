@@ -41,6 +41,10 @@ Describes various components installed in my system
     [push]
         default = simple
 
+### Java
+    sudo apt-add-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java8-installer
 
 
 ### Python
