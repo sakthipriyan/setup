@@ -51,3 +51,7 @@ Describes various components installed in my system
     sudo apt-get install python-pip
     sudo pip install Jinja2
     sudo pip install markdown
+
+### Scala
+    wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
+    sudo dpkg -i scala-2.11.7.deb
