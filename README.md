@@ -55,3 +55,6 @@ Describes various components installed in my system
 ### Scala
     wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
     sudo dpkg -i scala-2.11.7.deb
+    
+### Vlc Player
+    sudo apt-get install vlc browser-plugin-vlc
