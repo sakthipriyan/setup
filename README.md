@@ -10,6 +10,9 @@ Describes various components installed in my system
 ### Browser
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+### Compiz Config
+    sudo apt-get install compizconfig-settings-manager
+
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
     sudo dpkg -i atom-amd64.deb
