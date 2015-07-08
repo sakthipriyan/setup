@@ -55,6 +55,8 @@ Describes various components installed in my system
     sudo apt-get update
     sudo apt-get install oracle-java8-installer
 
+### Maven
+    sudo apt-get install maven
 
 ### Python
     sudo apt-get install python-pip
@@ -64,6 +66,12 @@ Describes various components installed in my system
 ### Scala
     wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
     sudo dpkg -i scala-2.11.7.deb
-    
+
+### sbt
+    # http://www.scala-sbt.org/release/tutorial/Installing-sbt-on-Linux.html
+    echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+    sudo apt-get update
+    sudo apt-get install sbt
+
 ### Vlc Player
     sudo apt-get install vlc browser-plugin-vlc
