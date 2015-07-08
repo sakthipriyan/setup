@@ -12,6 +12,9 @@ Describes various components installed in my system
 
 ### Compiz Config
     sudo apt-get install compizconfig-settings-manager compiz-plugins-extra
+    # Compiz Config > Window Management > Put > Edit Put to Previous/Next Output window
+    # Put To Next Previous <Control><Alt><Super>Left
+    # Put To Next Output <Control><Alt><Super>Right
 
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
