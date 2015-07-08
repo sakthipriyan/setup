@@ -11,7 +11,7 @@ Describes various components installed in my system
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 ### Compiz Config
-    sudo apt-get install compizconfig-settings-manager
+    sudo apt-get install compizconfig-settings-manager compiz-plugins-extra
 
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
