@@ -27,7 +27,7 @@ Describes various components installed in my system
     sudo dpkg -i atom-amd64.deb
 
 ### Eclipse IDE
-    [link](eclipse.md)
+[link](eclipse.md) to another file.
 
 ### Git
     sudo apt-get install git
