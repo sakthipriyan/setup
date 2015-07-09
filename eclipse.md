@@ -1,6 +1,6 @@
 ### Eclipse IDE
 
-    # 1) Set up for Java IDE
+#### Set up for Java IDE
 
     wget http://ftp.yz.yamagata-u.ac.jp/pub/eclipse//technology/epp/downloads/release/mars/R/eclipse-jee-mars-R-linux-gtk-x86_64.tar.gz
 
@@ -29,7 +29,7 @@
 
     sudo desktop-file-install eclipse-java.desktop 
 
-    # 2) Set up for Scala IDE
+#### Set up for Scala IDE
 
     wget http://downloads.typesafe.com/scalaide-pack/4.1.0-vfinal-luna-211-20150704/scala-SDK-4.1.0-vfinal-2.11-linux.gtk.x86_64.tar.gz
 
