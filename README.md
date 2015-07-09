@@ -58,6 +58,7 @@ Describes various components installed in my system
 
 ### Go
     sudo apt-get install golang
+    sudo apt-get install golang-go.tools
 
 #### Google Cloud SDK 
     sudo curl https://sdk.cloud.google.com/ | sudo bash
