@@ -7,6 +7,9 @@ Describes various components installed in my system
 
 ## Installations
 
+### Apache Benchmark
+    sudo apt-get install apache2-utils
+
 ### Browser
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 
@@ -16,70 +19,15 @@ Describes various components installed in my system
     # Put To Next Previous <Control><Alt><Super>Left
     # Put To Next Output <Control><Alt><Super>Right
 
+### Curl
+    sudo apt-get install curl
+
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
     sudo dpkg -i atom-amd64.deb
 
 ### Eclipse IDE
-    
-    # 1) Set up for Java IDE
-
-    wget http://ftp.yz.yamagata-u.ac.jp/pub/eclipse//technology/epp/downloads/release/mars/R/eclipse-jee-mars-R-linux-gtk-x86_64.tar.gz
-
-    sudo cp eclipse-jee-mars-R-linux-gtk-x86_64.tar.gz  /opt
-    cd /opt
-    sudo tar -xvf eclipse-jee-mars-R-linux-gtk-x86_64.tar.gz
-    sudo mv eclipse eclipse-java
-
-    sudo cp icon.xpm  /usr/share/pixmaps/eclipse-java.xpm
-
-    cd /usr/share/applications
-    sudo nano eclipse-java.desktop
-
-    # Paste the following content
-
-    [Desktop Entry]
-    Name=Java IDE
-    Comment=Eclipse IDE for Java 
-    GenericName=IDE
-    Type=Application
-    Exec=/opt/eclipse-java/eclipse
-    Terminal=false
-    Icon=eclipse-java
-    NoDisplay=false
-    Categories=Development;IDE;
-
-    sudo desktop-file-install eclipse-java.desktop 
-
-    # 2) Set up for Scala IDE
-
-    wget http://downloads.typesafe.com/scalaide-pack/4.1.0-vfinal-luna-211-20150704/scala-SDK-4.1.0-vfinal-2.11-linux.gtk.x86_64.tar.gz
-
-    sudo cp scala-SDK-4.1.0-vfinal-2.11-linux.gtk.x86_64.tar.gz  /opt
-    cd /opt
-    sudo tar -xvf scala-SDK-4.1.0-vfinal-2.11-linux.gtk.x86_64.tar.gz 
-    sudo mv eclipse eclipse-scala
-    
-    sudo cp icon.xpm  /usr/share/pixmaps/eclipse-scala.xpm
-
-    cd /usr/share/applications
-    sudo nano eclipse-scala.desktop
-
-    # Paste the following content
-    
-    [Desktop Entry]
-    Name=Scala IDE
-    Comment=Eclipse IDE for Scala
-    GenericName=IDE
-    Type=Application
-    Exec=/opt/eclipse-scala/eclipse
-    Terminal=false
-    Icon=eclipse-scala
-    NoDisplay=false
-    Categories=Development;IDE;
-
-    sudo desktop-file-install eclipse-scala.desktop 
-
+    [link](eclipse.md)
 
 ### Git
     sudo apt-get install git
@@ -111,6 +59,10 @@ Describes various components installed in my system
 ### Go
     sudo apt-get install golang
 
+#### Google Cloud SDK 
+    sudo curl https://sdk.cloud.google.com/ | sudo bash
+    # type /opt for path
+
 ### Java
     sudo apt-add-repository ppa:webupd8team/java
     sudo apt-get update
@@ -133,6 +85,9 @@ Describes various components installed in my system
     echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
     sudo apt-get update
     sudo apt-get install sbt
+
+### tree
+    sudo apt-get install tree
 
 ### Vlc Player
     sudo apt-get install vlc browser-plugin-vlc
