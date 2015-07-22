@@ -60,9 +60,12 @@ Describes various components installed in my system
     sudo apt-get install golang
     sudo apt-get install golang-go.tools
 
-#### Google Cloud SDK 
+### Google Cloud SDK 
     sudo curl https://sdk.cloud.google.com/ | sudo bash
     # type /opt for path
+
+### Inkscape
+    sudo apt-get install inkscape
 
 ### Java
     sudo apt-add-repository ppa:webupd8team/java
