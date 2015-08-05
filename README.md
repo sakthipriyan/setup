@@ -80,15 +80,20 @@ Describes various components installed in my system
     sudo pip install Jinja2
     sudo pip install markdown
 
-### Scala
-    wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
-    sudo dpkg -i scala-2.11.7.deb
-
 ### sbt
     # http://www.scala-sbt.org/release/tutorial/Installing-sbt-on-Linux.html
     echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
     sudo apt-get update
     sudo apt-get install sbt
+
+### Scala
+    wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
+    sudo dpkg -i scala-2.11.7.deb
+
+### Skype
+    # Software & Updates > Other Software > Enable a)Canonical Parters & b)Canonical Partners (Source Code)
+    sudo apt-get update
+    sudo apt-get install skype
 
 ### tree
     sudo apt-get install tree
