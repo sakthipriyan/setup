@@ -22,6 +22,9 @@ Describes various components installed in my system
 ### Curl
     sudo apt-get install curl
 
+### Docker
+    wget -qO- https://get.docker.com/ | sh
+
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
     sudo dpkg -i atom-amd64.deb
@@ -89,11 +92,6 @@ Describes various components installed in my system
 ### Scala
     wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
     sudo dpkg -i scala-2.11.7.deb
-
-### Skype
-    # Software & Updates > Other Software > Enable a)Canonical Parters & b)Canonical Partners (Source Code)
-    sudo apt-get update
-    sudo apt-get install skype
 
 ### tree
     sudo apt-get install tree
