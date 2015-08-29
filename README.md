@@ -93,6 +93,9 @@ Describes various components installed in my system
     wget https://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.deb
     sudo dpkg -i scala-2.11.7.deb
 
+### Sqliteman
+    sudo apt-get install sqliteman
+
 ### tree
     sudo apt-get install tree
 
