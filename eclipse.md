@@ -9,7 +9,7 @@
     sudo tar -xvf eclipse-jee-mars-R-linux-gtk-x86_64.tar.gz
     sudo mv eclipse eclipse-java
 
-    sudo cp icon.xpm  /usr/share/pixmaps/eclipse-java.xpm
+    sudo cp eclipse-java/icon.xpm  /usr/share/pixmaps/eclipse-java.xpm
 
     cd /usr/share/applications
     sudo nano eclipse-java.desktop
@@ -38,7 +38,7 @@
     sudo tar -xvf scala-SDK-4.1.0-vfinal-2.11-linux.gtk.x86_64.tar.gz 
     sudo mv eclipse eclipse-scala
     
-    sudo cp icon.xpm  /usr/share/pixmaps/eclipse-scala.xpm
+    sudo cp eclipse-scala/icon.xpm  /usr/share/pixmaps/eclipse-scala.xpm
 
     cd /usr/share/applications
     sudo nano eclipse-scala.desktop
