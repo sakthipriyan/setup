@@ -28,7 +28,6 @@ Describes various components installed in my system
 
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
-    sudo dpkg -i atom-amd64.deb
 
 ### Eclipse IDE
 [link](eclipse.md) to another file.
