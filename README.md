@@ -24,6 +24,7 @@ Describes various components installed in my system
 
 ### Docker
     wget -qO- https://get.docker.com/ | sh
+    sudo usermod -aG docker sakthipriyan
 
 ### Editors
     sudo dpkg -i sublime-text_build-3083_amd64.deb
@@ -98,6 +99,9 @@ Describes various components installed in my system
 
 ### tree
     sudo apt-get install tree
+
+### Terminator
+    sudo apt-get install terminator
 
 ### Vlc Player
     sudo apt-get install vlc browser-plugin-vlc
