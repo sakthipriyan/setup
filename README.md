@@ -8,25 +8,28 @@ Describes various components installed in my system
 ## Installations
 
 ### Apache Benchmark
-    sudo apt-get install apache2-utils
+    sudo apt-get install -y apache2-utils
 
 ### Browser
-    sudo dpkg -i google-chrome-stable_current_amd64.deb
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    dpkg -i google-chrome-stable_current_amd64.deb 
 
 ### Compiz Config
-    sudo apt-get install compizconfig-settings-manager compiz-plugins-extra
+    sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra
     # Compiz Config > Window Management > Put > Edit Put to Previous/Next Output window
     # Put To Next Previous <Control><Alt><Super>Left
     # Put To Next Output <Control><Alt><Super>Right
 
 ### Curl
-    sudo apt-get install curl
+    sudo apt-get install -y curl
 
 ### Docker
     wget -qO- https://get.docker.com/ | sh
     sudo usermod -aG docker sakthipriyan
 
-### Editors
+### Sublime
+    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    sudo apt-get install -y apt-transport-https
     sudo dpkg -i sublime-text_build-3083_amd64.deb
 
 ### Eclipse IDE
@@ -70,16 +73,20 @@ Describes various components installed in my system
 ### Inkscape
     sudo apt-get install inkscape
 
+### IntelliJ IDEA
+    
+    wget https://download-cf.jetbrains.com/idea/ideaIC-2018.3.4.tar.gz
+
 ### Java
     sudo apt-add-repository ppa:webupd8team/java
     sudo apt-get update
-    sudo apt-get install oracle-java8-installer
+    sudo apt-get install -y oracle-java8-installer
 
 ### Maven
-    sudo apt-get install maven
+    sudo apt-get install -y maven
 
 ### Python
-    sudo apt-get install python-pip
+    sudo apt-get install -y python-pip
     sudo pip install Jinja2
     sudo pip install markdown
 
@@ -97,10 +104,19 @@ Describes various components installed in my system
     sudo apt-get install sqliteman
 
 ### tree
-    sudo apt-get install tree
+    sudo apt-get install -y tree
 
 ### Terminator
     sudo apt-get install terminator
 
 ### Vlc Player
     sudo apt-get install vlc browser-plugin-vlc
+
+### VS Code
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+    sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+    # Then update the package cache and install the package using:
+    sudo apt-get install apt-transport-https
+    sudo apt-get update
+    sudo apt-get install code # or code-insiders
