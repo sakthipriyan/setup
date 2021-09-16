@@ -1,0 +1,31 @@
+[user]
+    name = Sakthi Priyan H
+    email = sakthipriyans@gmail.com
+
+[alias]
+    am = commit --amend
+    br = branch
+    bd = branch -d
+    bD = branch -D
+    oD = push origin --delete
+    cl = clean -f
+    cm = commit -m
+    ca = commit -a -m
+    cb = checkout -b
+    co = checkout
+    mm = merge master
+    pr = pull --rebase
+    pu = push
+    st = status
+    bk = stash 
+    rs = stash pop
+    pt = push --tags
+
+[push]
+    default = current
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+
+[pull]
+	rebase = false
