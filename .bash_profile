@@ -4,9 +4,6 @@ parse_git_branch() {
   if [[ ${#branch} -gt 0 ]] 
   then 
     echo " ${branch//feature\/}"
-    #green=`tput setaf 2`
-    #reset=`tput sgr0`
-    #echo " $green$branch$reset"
   fi
 }
 
